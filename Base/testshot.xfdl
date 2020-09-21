@@ -2,7 +2,12 @@
 <FDL version="2.1">
   <Form id="testshot" width="1280" height="720" titletext="New Form">
     <Layouts>
-      <Layout height="720" mobileorientation="landscape" width="1280"/>
+      <Layout height="720" mobileorientation="landscape" width="1280">
+        <Button id="Button00" taborder="0" text="Button00" left="30" top="26" width="102" height="48"/>
+        <Button id="Button00_00" taborder="1" text="Button00" left="142" top="26" width="102" height="48"/>
+        <Button id="Button00_00_00" taborder="2" text="Button00" left="368" top="26" width="102" height="48"/>
+        <Button id="Button00_01" taborder="3" text="Button00" left="256" top="26" width="102" height="48"/>
+      </Layout>
     </Layouts>
   </Form>
 </FDL>
