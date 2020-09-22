@@ -3,9 +3,27 @@
   <Form id="testshot" width="1280" height="720" titletext="New Form">
     <Layouts>
       <Layout height="720" mobileorientation="landscape" width="1280">
-        <Button id="Button00" taborder="0" text="Button00" left="30" top="26" width="102" height="48"/>
-        <Button id="Button00_00" taborder="1" text="Button00" left="142" top="26" width="102" height="48"/>
+        <Button id="Button00" taborder="0" text="Button00" left="30" top="26" width="102" height="48" onclick="Button00_onclick"/>
+        <Button id="Button00_00" taborder="1" text="Button00" left="142" top="26" width="102" height="48" color="#000000" onclick="Button00_00_onclick"/>
       </Layout>
     </Layouts>
+    <Objects>
+      <Dataset id="Dataset00">
+        <ColumnInfo>
+          <Column id="Column0" type="STRING" size="256"/>
+        </ColumnInfo>
+      </Dataset>
+    </Objects>
+    <Script type="xscript5.1"><![CDATA[
+this.Button00_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	
+};
+
+this.Button00_00_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	this.alert("TEST");  
+};
+]]></Script>
   </Form>
 </FDL>
